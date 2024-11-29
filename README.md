@@ -6,19 +6,19 @@ This is the companion code repository to the work "Necessary but not Sufficient:
 
 To run our code, we recommend you use [`uv`](https://github.com/astral-sh/uv).
 
-```console
-$ uv venv
-$ uv sync
-$ source .venv/bin/activate
-$ python experiments/1_learn_by_metric.py  # for example, to run 1st experiment.
+```sh
+uv venv
+uv sync
+source .venv/bin/activate
+python experiments/1_learn_by_metric.py  # for example, to run 1st experiment.
 ```
 
 ## Data used for the manuscript
 
 If you want to download the experimental data upon which we build the figures and tables on the paper, it is available at [OSF](https://osf.io/9n6fs/?view_only=ca0a2b34f04e4335961b9481f3101ada). Download the `tar.gz` file and extract it to the top-level directory of this repository:
 
-```console
-$ tar xzf expdata.tar.gz
+```sh
+tar xzf expdata.tar.gz
 ```
 
 In doing so you will be able to run the notebooks that generate our paper's figures.
