@@ -32,3 +32,6 @@ If you are interested in the fast computation of projection quality metrics, che
 
 Feel free to reach out to me via [email](mailto:a.machadodosreis@uu.nl).
 
+## About Me
+
+My name is Alister Machado, I am a PhD Candidate researching Data Visualization (more specifically focused in dimensionality reduction and explainable AI) with the Visualization and Graphics Group (VIG) of Utrecht University, in the Netherlands. I am the person behind [ShaRP](https://github.com/amreis/sharp) and the [Differentiable DBMs](https://github.com/amreis/differentiable-dbm). You can check out my research [here](https://scholar.google.com.br/citations?user=WVXX6mYAAAAJ&hl=en). I am currently in the 4th year of my PhD (out of 5 total), and am expected to graduate around September 2026.
