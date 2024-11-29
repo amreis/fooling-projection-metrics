@@ -1,0 +1,23 @@
+defaults:
+  - _self_
+
+projection: ???
+dataset: ???
+k: ???
+use_tensorboard: False
+epochs: 1000
+use_zadu: False
+notes: "Placeholder."
+
+hydra:
+  job:
+    chdir: True
+  mode: MULTIRUN
+  sweep:
+    dir: multirun/${now:%Y-%m-%d}/exp2-${now:%H-%M-%S}
+    subdir: ${hydra.job.num}-${projection}-${dataset}-${k}
+  sweeper:
+    params:
+      dataset: mnist,fashionmnist,har,reuters,spambase,usps
+      projection: tsne,umap,isomap,mds
+      k: 51

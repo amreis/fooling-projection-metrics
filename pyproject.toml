@@ -1,0 +1,55 @@
+[project]
+name = "neural-qmetrics"
+version = "0.1.0"
+description = ""
+authors = [
+    { name = "Alister Machado dos Reis", email = "a.machadodosreis@uu.nl" },
+]
+readme = "README.md"
+dependencies = [
+    "cupy-cuda12x>=12.3,<13",
+    "hydra-core>=1.3,<2",
+    "ipykernel>=6.27,<7",
+    "matplotlib==3.7.*",
+    "networkx>=3.2,<4",
+    "numpy>=1.26.2,<2",
+    "pyyaml>=6",
+    "scikit-image>=0.24.0",
+    "scikit-learn>=1.3,<2",
+    "tensorboard>=2.15,<3",
+    "tensorflow==2.15.*",
+    "tqdm>=4.50,<5",
+    "umap-learn>=0.5,<1",
+    "torch==2.1.*",
+    "zadu",
+    "tensorflow-projection-qm[and-cuda]>=0.2.3",
+]
+requires-python = ">=3.10,<3.12"
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.mypy]
+plugins = "numpy.typing.mypy_plugin"
+disable_error_code = "import-untyped"
+
+[tool.uv]
+dev-dependencies = [
+    "hydra-joblib-launcher>=1.2.0",
+    "openpyxl>=3.1.5",
+    "pandas-stubs>=2.2.2.240807",
+    "pyqt5>=5.15.11",
+    "seaborn>=0.13.2",
+    "torch-tb-profiler>=0.4.3",
+]
+
+
+[tool.uv.sources]
+torch = { index = "pytorch" }
+zadu = { git = "https://github.com/hj-n/zadu.git" }
+
+[[tool.uv.index]]
+name = "pytorch"
+url = "https://download.pytorch.org/whl/cu121"
+explicit = true

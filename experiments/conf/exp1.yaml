@@ -1,0 +1,25 @@
+defaults:
+  - _self_
+
+projection: ???
+dataset: ???
+k: ???
+metric: ???
+use_tensorboard: False
+epochs: 1000
+use_zadu: False
+notes: "Placeholder."
+
+hydra:
+  job:
+    chdir: True
+  mode: MULTIRUN
+  sweep:
+    dir: multirun/${now:%Y-%m-%d}/${now:%H-%M-%S}
+    subdir: ${hydra.job.num}-${projection}-${metric}-${dataset}-${k}
+  sweeper:
+    params:
+      dataset: mnist,fashionmnist,har,reuters,spambase,usps
+      projection: tsne,umap,isomap,mds
+      metric: trustworthiness,continuity,neighborhood_hit,jaccard
+      k: 1,7,21,51

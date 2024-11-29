@@ -1,0 +1,9 @@
+.venv
+.vscode
+data/
+.python-version
+.mypy_cache
+__pycache__
+runs
+outputs
+multirun/
