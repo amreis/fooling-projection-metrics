@@ -10,6 +10,12 @@ To run our code, we recommend you use [`uv`](https://github.com/astral-sh/uv).
 uv venv
 uv sync
 source .venv/bin/activate
+
+# Unzip the data to be able to run the experiments
+cd data
+chmod +x unzip.sh  # or $ bash unzip.sh
+./unzip.sh
+
 python experiments/1_learn_by_metric.py  # for example, to run 1st experiment.
 ```
 
