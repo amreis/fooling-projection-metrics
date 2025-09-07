@@ -1,6 +1,6 @@
 # Fooling Projection Quality Metrics
 
-This is the companion code repository to the work "Necessary but not Sufficient: Limitations of Projection Quality Metrics", by Alister Machado, Michael Behrisch, and Alexandru Telea (to appear, hopefully soon).
+This is the companion code repository to [the work](https://doi.org/10.1111/cgf.70101) "Necessary but not Sufficient: Limitations of Projection Quality Metrics", by Alister Machado, Michael Behrisch, and Alexandru Telea (EuroVis 2025).
 
 ## Running the fooling pipeline
 
